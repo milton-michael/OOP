@@ -1,19 +1,19 @@
 package mod1;
 import java.util.Scanner;
 
-public class Fibonacci {
+public class OddNumbers {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter n: ");
         int n = sc.nextInt();
 
-        int a = 0, b = 1;
         for (int i = 1; i <= n; i++) {
-            System.out.print(a + " ");
-            int next = a + b;
-            a = b;
-            b = next;
+            if (i % 2 == 0) {
+                continue; 
+            }
+            System.out.print(i + " ");
         }
-    } // Milton Michael
-      // 16/8/25
+        // Milton Michael
+        // 16/8/25
+    }
 }
